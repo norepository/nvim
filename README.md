@@ -1,1 +1,1 @@
-# Nvim setup
+# Nvim setup (deprecated)
