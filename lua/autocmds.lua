@@ -28,5 +28,13 @@ autocmd("LspAttach", {
 	end
 })
 
+-- Close QuickFix window
+autocmd("FileType", {
+	pattern = "qf",
+	callback = function()
+		vim.keymap.set("n", "q", ":cclose<CR>", { buffer = true, noremap = true, silent = true })
+	end,
+})
+
 -- Look at this bozo
 usercmd("W", "w", {})
