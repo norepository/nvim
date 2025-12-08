@@ -10,7 +10,7 @@ vim.pack.add({
 })
 
 -- Colorscheme
-vim.cmd("colorscheme vague")
+vim.cmd.colorscheme("vague")
 
 -- Autopairs
 require('nvim-autopairs').setup()
