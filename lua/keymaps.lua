@@ -2,6 +2,7 @@ local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
 
+-- Clear search selection
 keymap("n", "<C-c>", "<cmd>nohlsearch<CR>")
 
 -- Package
@@ -18,6 +19,9 @@ keymap(
 	{ noremap = true, silent = true, desc = "Search for visual selection" }
 )
 
+-- Man
+keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) end)
+
 -- Lsp
 keymap("n", "gd", vim.lsp.buf.definition, {})
 keymap("n", "gD", vim.lsp.buf.declaration, {})
@@ -32,3 +36,11 @@ keymap("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 keymap("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 keymap("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+
+-- Diagnostics
+keymap("n", "<leader>dt", function()
+	vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
+end, { desc = "Toggle diagnostics virtual text" })
+
+keymap("n", "<leader>d", vim.diagnostic.open_float, {})
