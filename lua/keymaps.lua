@@ -39,8 +39,8 @@ keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 
 -- Diagnostics
-keymap("n", "<leader>dt", function()
+keymap("n", "<leader>d", function()
 	vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
 end, { desc = "Toggle diagnostics virtual text" })
 
-keymap("n", "<leader>d", vim.diagnostic.open_float, {})
+keymap("n", "<leader>df", vim.diagnostic.open_float, {})
