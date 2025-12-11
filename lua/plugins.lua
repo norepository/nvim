@@ -40,3 +40,13 @@ vim.lsp.config("lua_ls", { cmd = { "lua-language-server", "--force-accept-worksp
 
 -- Latex
 vim.g.vimtex_view_method = "zathura"
+
+-- Autopairs
+local npairs = require('nvim-autopairs')
+local Rule = require('nvim-autopairs.rule')
+local cond = require('nvim-autopairs.conds')
+
+npairs.add_rules({
+	Rule("/* ", " */", { "c", "cpp" })
+	    :with_move(cond.none())
+})
