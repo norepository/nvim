@@ -6,6 +6,7 @@ vim.pack.add({
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/lervag/vimtex" },
+	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
 
 })
 

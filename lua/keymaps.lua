@@ -22,11 +22,14 @@ keymap(
 -- Man
 keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) end)
 
--- Lsp
-keymap("n", "gd", vim.lsp.buf.definition, {})
-keymap("n", "gD", vim.lsp.buf.declaration, {})
-keymap("n", "gi", vim.lsp.buf.implementation, {})
-keymap("n", "gr", vim.lsp.buf.references, {})
+-- Fzf
+keymap("n", "<leader>f", "<cmd>FzfLua files<CR>", {})
+keymap("n", "<leader>g", "<cmd>FzfLua live_grep<CR>", {})
+
+keymap("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", {})
+keymap("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", {})
+keymap("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", {})
+keymap("n", "gr", "<cmd>FzfLua lsp_references<CR>", {})
 keymap("n", "gc", vim.lsp.buf.code_action, {})
 keymap("n", "gh", vim.lsp.buf.hover, {})
 
