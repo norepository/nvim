@@ -25,12 +25,12 @@ keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) 
 -- Fzf
 keymap("n", "<leader>f", "<cmd>FzfLua files<CR>", {})
 keymap("n", "<leader>g", "<cmd>FzfLua live_grep<CR>", {})
+keymap("n", "<leader>d", "<cmd>FzfLua diagnostics_document<CR>", {})
 
 keymap("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", {})
 keymap("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", {})
 keymap("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", {})
 keymap("n", "gr", "<cmd>FzfLua lsp_references<CR>", {})
-keymap("n", "gc", vim.lsp.buf.code_action, {})
 keymap("n", "gh", vim.lsp.buf.hover, {})
 
 
@@ -42,8 +42,8 @@ keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 
 -- Diagnostics
-keymap("n", "<leader>d", function()
-	vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
-end, { desc = "Toggle diagnostics virtual text" })
-
-keymap("n", "<leader>df", vim.diagnostic.open_float, {})
+-- keymap("n", "<leader>d", function()
+-- 	vim.diagnostic.config({ virtual_text = not vim.diagnostic.config().virtual_text })
+-- end, { desc = "Toggle diagnostics virtual text" })
+--
+-- keymap("n", "<leader>df", vim.diagnostic.open_float, {})
