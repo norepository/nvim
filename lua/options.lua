@@ -5,7 +5,7 @@ vim.o.signcolumn = "yes"
 vim.o.cursorline = true
 vim.o.scrolloff = 8
 vim.o.winborder = "rounded"
-vim.o.wrap = false
+vim.o.wrap = true
 vim.o.swapfile = false
 
 vim.o.clipboard = 'unnamedplus'
