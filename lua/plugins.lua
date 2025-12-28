@@ -35,7 +35,6 @@ vim.lsp.enable({
 	"clangd",
 	"lua_ls",
 	"pylsp",
-	"laravel_ls",
 })
 
 vim.lsp.config("lua_ls", { cmd = { "lua-language-server", "--force-accept-workspace" }, })

@@ -7,6 +7,8 @@ vim.o.scrolloff = 8
 vim.o.winborder = "rounded"
 vim.o.wrap = true
 vim.o.swapfile = false
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 vim.o.clipboard = 'unnamedplus'
 
