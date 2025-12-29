@@ -1,5 +1,6 @@
 vim.pack.add({
-	{ src = "https://github.com/vague2k/vague.nvim" },
+	-- { src = "https://github.com/vague2k/vague.nvim" },
+	{ src = "https://github.com/blazkowolf/gruber-darker.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
@@ -11,7 +12,7 @@ vim.pack.add({
 })
 
 -- Colorscheme
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("gruber-darker")
 
 -- Autopairs
 require('nvim-autopairs').setup()
