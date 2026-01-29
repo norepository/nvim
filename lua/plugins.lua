@@ -8,7 +8,7 @@ vim.pack.add({
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/lervag/vimtex" },
 	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
-
+	{ src = "OXY2DEV/markview.nvim" },
 })
 
 -- Colorscheme
