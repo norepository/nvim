@@ -8,7 +8,6 @@ vim.pack.add({
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/lervag/vimtex" },
 	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
-	{ src = "OXY2DEV/markview.nvim" },
 })
 
 -- Colorscheme
@@ -42,7 +41,7 @@ vim.lsp.enable({
 vim.lsp.config("lua_ls", { cmd = { "lua-language-server", "--force-accept-workspace" }, })
 
 -- Latex
-vim.g.vimtex_view_method = "zathura"
+-- vim.g.vimtex_view_method = "zathura"
 
 -- Autopairs
 local npairs = require('nvim-autopairs')
