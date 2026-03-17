@@ -1,5 +1,4 @@
 vim.pack.add({
-	-- { src = "https://github.com/vague2k/vague.nvim" },
 	{ src = "https://github.com/blazkowolf/gruber-darker.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
@@ -8,6 +7,7 @@ vim.pack.add({
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/lervag/vimtex" },
 	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
+	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
 })
 
 -- Colorscheme
@@ -52,3 +52,12 @@ npairs.add_rules({
 	Rule("/* ", " */", { "c", "cpp" })
 	    :with_move(cond.none())
 })
+
+-- fff
+vim.g.fff = {
+  lazy_sync = true, -- start syncing only when the picker is open
+  debug = {
+    enabled = true,
+    show_scores = true,
+  },
+}

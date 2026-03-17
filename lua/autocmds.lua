@@ -36,5 +36,13 @@ autocmd("FileType", {
 	end,
 })
 
+autocmd('PackChanged', {
+  callback = function(event)
+    if event.data.updated then
+      require('fff.download').download_or_build_binary()
+    end
+  end,
+})
+
 -- Look at this bozo
 usercmd("W", "w", {})

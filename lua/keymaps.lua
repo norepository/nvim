@@ -33,6 +33,14 @@ keymap("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", {})
 keymap("n", "gr", "<cmd>FzfLua lsp_references<CR>", {})
 keymap("n", "gh", vim.lsp.buf.hover, {})
 
+-- fff
+keymap(
+  'n',
+  'ff',
+  function() require('fff').find_files() end,
+  { desc = 'FFFind files' }
+)
+
 
 -- Keybinds to make split navigation easier.
 keymap("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
