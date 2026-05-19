@@ -1,15 +1,25 @@
+-- UI
 vim.o.number = true
-vim.o.undofile = true
-vim.o.ignorecase = true
-vim.o.signcolumn = "yes"
 vim.o.cursorline = true
-vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 vim.o.wrap = true
-vim.o.swapfile = false
+vim.cmd(":hi statusline guibg=NONE")
+
+-- Navigation
+vim.o.scrolloff = 8
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-vim.o.clipboard = 'unnamedplus'
+-- Search
+vim.o.ignorecase = true
 
-vim.cmd(":hi statusline guibg=NONE")
+-- Indentation
+vim.opt.tabstop = 2
+
+-- Files
+vim.o.undofile = true
+vim.o.swapfile = false
+
+-- System
+vim.o.clipboard = "unnamedplus"

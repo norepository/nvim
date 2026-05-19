@@ -20,7 +20,7 @@ keymap(
 )
 
 -- Man
-keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) end)
+-- keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) end)
 
 -- Fzf
 keymap("n", "<leader>f", "<cmd>FzfLua files<CR>", {})
@@ -32,6 +32,10 @@ keymap("n", "gD", "<cmd>FzfLua lsp_declarations<CR>", {})
 keymap("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", {})
 keymap("n", "gr", "<cmd>FzfLua lsp_references<CR>", {})
 keymap("n", "gh", vim.lsp.buf.hover, {})
+
+-- keymap('n', '<leader>mc', function()
+--   require('fzf-lua').man_pages({ sections = { "3" } })
+-- end, { desc = 'Man pages (libc)' })
 
 -- fff
 keymap(
