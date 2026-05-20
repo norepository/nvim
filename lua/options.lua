@@ -16,6 +16,9 @@ vim.o.ignorecase = true
 
 -- Indentation
 vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2 
+vim.opt.expandtab = false
+vim.opt.cindent = true
 
 -- Files
 vim.o.undofile = true
