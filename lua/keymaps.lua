@@ -23,8 +23,8 @@ keymap(
 -- keymap('n', '<leader>k', function() vim.cmd('Man ' .. vim.fn.expand('<cword>')) end)
 
 -- Fzf
-keymap("n", "<leader>f", "<cmd>FzfLua files<CR>", {})
-keymap("n", "<leader>g", "<cmd>FzfLua live_grep<CR>", {})
+-- keymap("n", "<leader>f", "<cmd>FzfLua files<CR>", {})
+-- keymap("n", "<leader>g", "<cmd>FzfLua live_grep<CR>", {})
 keymap("n", "<leader>d", "<cmd>FzfLua diagnostics_document<CR>", {})
 
 keymap("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", {})
@@ -38,12 +38,8 @@ keymap("n", "gh", vim.lsp.buf.hover, {})
 -- end, { desc = 'Man pages (libc)' })
 
 -- fff
-keymap(
-  'n',
-  'ff',
-  function() require('fff').find_files() end,
-  { desc = 'FFFind files' }
-)
+keymap('n', '<leader>f', function() require('fff').find_files() end, { desc = 'Find Files' })
+keymap('n', '<leader>g', function() require('fff').live_grep() end, { desc = 'Live Grep' })
 
 
 -- Keybinds to make split navigation easier.
