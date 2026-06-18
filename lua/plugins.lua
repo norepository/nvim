@@ -1,13 +1,15 @@
 vim.pack.add({
-	{ src = "https://github.com/blazkowolf/gruber-darker.nvim" },
-	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-	{ src = "https://github.com/stevearc/oil.nvim" },
-	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/mason-org/mason.nvim" },
-	{ src = "https://github.com/windwp/nvim-autopairs" },
-	{ src = "https://github.com/lervag/vimtex" },
-	{ src = "https://github.com/ibhagwan/fzf-lua.git" },
-	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
+"https://github.com/nvim-tree/nvim-web-devicons",
+"https://github.com/blazkowolf/gruber-darker.nvim",
+"https://github.com/lewis6991/gitsigns.nvim",
+"https://github.com/stevearc/oil.nvim",
+"https://github.com/neovim/nvim-lspconfig",
+"https://github.com/mason-org/mason.nvim",
+"https://github.com/windwp/nvim-autopairs",
+"https://github.com/lervag/vimtex",
+"https://github.com/ibhagwan/fzf-lua.git",
+-- "https://github.com/dmtrKovalenko/fff.nvim",
+"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
 
 -- Colorscheme
