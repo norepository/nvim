@@ -37,8 +37,10 @@ autocmd("FileType", {
 })
 
 autocmd('PackChanged', {
-  callback = function(event)
-    if event.data.updated then
+  callback = function(ev)
+    local name, kind = ev.data.spec.name, ev.data.kind
+    if name == 'fff' and (kind == 'install' or kind == 'update') then
+      if not ev.data.active then vim.cmd.packadd('fff') end
       require('fff.download').download_or_build_binary()
     end
   end,

@@ -8,7 +8,7 @@ vim.pack.add({
 "https://github.com/windwp/nvim-autopairs",
 "https://github.com/lervag/vimtex",
 "https://github.com/ibhagwan/fzf-lua.git",
--- "https://github.com/dmtrKovalenko/fff.nvim",
+"https://github.com/dmtrKovalenko/fff",
 "https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
 
