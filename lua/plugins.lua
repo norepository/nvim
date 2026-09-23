@@ -38,12 +38,11 @@ vim.lsp.enable({
 	"clangd",
 	"lua_ls",
 	"pylsp",
+	"tinymist",
 })
 
 vim.lsp.config("lua_ls", { cmd = { "lua-language-server", "--force-accept-workspace" }, })
 
--- Latex
--- vim.g.vimtex_view_method = "zathura"
 
 -- Autopairs
 local npairs = require('nvim-autopairs')
