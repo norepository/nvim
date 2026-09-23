@@ -16,12 +16,9 @@ autocmd('TextYankPost', {
 autocmd("LspAttach", {
 	group = augroup("lsp", { clear = true }),
 	callback = function(args)
-		-- 2
 		autocmd("BufWritePre", {
-			-- 3
 			buffer = args.buf,
 			callback = function()
-				-- 4 + 5
 				vim.lsp.buf.format { async = false, id = args.data.client_id }
 			end,
 		})
@@ -32,7 +29,7 @@ autocmd("LspAttach", {
 autocmd("FileType", {
 	pattern = "qf",
 	callback = function()
-		vim.keymap.set("n", "q", ":cclose<CR>", { buffer = true, noremap = true, silent = true })
+		vim.keymap.set("n", "q", ":cclose<CR>", { buffer = true, silent = true })
 	end,
 })
 

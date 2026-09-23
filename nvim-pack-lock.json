@@ -1,0 +1,48 @@
+{
+  "plugins": {
+    "fff": {
+      "rev": "7f8537e70f0ea1210f9acbbfc4640141105cdc78",
+      "src": "https://github.com/dmtrKovalenko/fff"
+    },
+    "gitsigns.nvim": {
+      "rev": "25050e4ed39e628282831d4cbecb1850454ce915",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "gruber-darker.nvim": {
+      "rev": "aba065c3a79b58cc3863d5c9db319255abd1258a",
+      "src": "https://github.com/blazkowolf/gruber-darker.nvim"
+    },
+    "mason.nvim": {
+      "rev": "16ba83bfc8a25f52bb545134f5bee082b195c460",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "nvim-autopairs": {
+      "rev": "7b9923abad60b903ece7c52940e1321d39eccc79",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
+    "nvim-lspconfig": {
+      "rev": "ed19590a3a9792901553c388d1aadafce012f80d",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-web-devicons": {
+      "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "oil.nvim": {
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "render-markdown.nvim": {
+      "rev": "5adf0895310c1904e5abfaad40a2baad7fe44a07",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "typst.vim": {
+      "rev": "1d5436c0f55490893892441c0eca55e6cdf4916c",
+      "src": "https://github.com/kaarmu/typst.vim"
+    },
+    "vimtex": {
+      "rev": "24e229914182ff301496a3e2c4214b28c4928d3f",
+      "src": "https://github.com/lervag/vimtex"
+    }
+  }
+}

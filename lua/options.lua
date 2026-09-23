@@ -4,7 +4,6 @@ vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 vim.o.wrap = true
--- vim.cmd(":hi statusline guibg=NONE")
 
 -- Word count function for the statusline
 function WordCount()
@@ -15,7 +14,7 @@ function WordCount()
   return wc.words .. " "
 end
 
-vim.o.statusline = "%f %m %r %= " .. "%{v:lua.WordCount()} " .. "%l:%c %p%%"
+vim.o.statusline = "%f %m %r %= %{v:lua.WordCount()} %l:%c %p%%"
 
 -- Navigation
 vim.o.scrolloff = 8
