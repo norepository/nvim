@@ -9,7 +9,6 @@ vim.pack.add({
 	"https://github.com/lervag/vimtex",
 	"https://github.com/dmtrKovalenko/fff",
 	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
-	"https://github.com/kaarmu/typst.vim",
 })
 
 -- Colorscheme
@@ -49,5 +48,5 @@ npairs.setup()
 
 npairs.add_rules({
 	Rule("/* ", " */", { "c", "cpp" })
-	    :with_move(cond.none())
+			:with_move(cond.none())
 })
